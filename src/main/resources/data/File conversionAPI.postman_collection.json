@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "719f6e1e-dec8-4840-b180-b06a361ef41c",
+		"name": "File conversionAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "import pdf convert to docx",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/JD/Downloads/file-sample_150kB.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/getPDFtoDocx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"getPDFtoDocx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "import docx convert to pdf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/JD/Downloads/file-sample_100kB.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/getDocxtoPDF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"getDocxtoPDF"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
